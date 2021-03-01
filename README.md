@@ -13,4 +13,5 @@
 |   downloadvmGirls.py   |        爬取图片        |
 |  download163music.py   |     下载网易云歌曲     |
 |         wjx.md         |   问卷星post参数解密   |
+|     dingdingdz.py      |      钉钉直播点赞      |
 
