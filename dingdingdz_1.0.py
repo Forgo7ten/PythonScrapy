@@ -3,7 +3,7 @@
 # FileName dingdingdz.py
 # Description 钉钉直播点赞
 # Author Forgo7ten
-# Version 1.0.0
+# Version 1.0
 # Date 2021/3/1
 
 import requests
@@ -44,13 +44,11 @@ def get_user_agent():
 
 
 my_headers = {
-    ':authority': 'lv.dingtalk.com',
-    ':method': 'GET',
-    ':path':
-    '/interaction/createLike?uuid=a50b4433-1188-4159-9d66-c48c8b017247&count=50000',
-    ':scheme': 'https',
+    'authority': 'lv.dingtalk.com',
+    'method': 'GET',
+    'scheme': 'https',
     'Host': 'lv.dingtalk.com',
-    'accept-encoding':'gzip, deflate, br',
+    'accept-encoding': 'gzip, deflate, br',
     'Pragma': 'no-cache',
     'Cache-Control': 'no-cache',
     'Upgrade-Insecure-Requests': '1',
@@ -70,7 +68,7 @@ def dddz(uuid, count):
     requests.packages.urllib3.disable_warnings()
     my_headers['User-Agent'] = get_user_agent()
     url = hosturl + uuid + paraname + count
-    html = requests.get(url,verify=False)
+    html = requests.get(url, headers=my_headers, timeout=10, verify=False)
     print(html.content.decode())
 
 
