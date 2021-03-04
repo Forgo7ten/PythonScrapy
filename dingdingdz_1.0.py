@@ -1,6 +1,6 @@
 # coding=utf-8
 # ---------------------------------------------
-# FileName dingdingdz.py
+# FileName dingdingdz_1.0.py
 # Description 钉钉直播点赞
 # Author Forgo7ten
 # Version 1.0

@@ -14,4 +14,5 @@
 |  download163music.py   |     下载网易云歌曲     |
 |         wjx.md         |   问卷星post参数解密   |
 |   dingdingdz_1.0.py    |  钉钉直播点赞1.0版本   |
+|     dingdingdz_2.0     |  钉钉直播点赞2.0版本   |
 
