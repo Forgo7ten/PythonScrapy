@@ -112,8 +112,6 @@ class DddzWd:
     # 与【开始刷赞】按钮绑定的方法
     def startDz(self):
         self.event.set()
-        # 禁用按钮，防止用户再次点击
-        self.ui.startButton.setEnabled(False)
         # 保存一下作为输出的标签
         printf = self.ui.tipsPrint
         printf.setText("")
@@ -147,6 +145,8 @@ class DddzWd:
 
         # 子线程运行函数
         def childDing():
+            # 禁用按钮，防止用户再次点击
+            self.ui.startButton.setEnabled(False)
             # 初始化一个Dddz类对象
             dingding = Dddz(uuid, count)
             # 循环重复次数
